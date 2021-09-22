@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+    <script src="js/jquery-3.5.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+
+    <script src="js/wow.min.js"></script>
+
+    <link rel="stylesheet" href="css/animate.min.css">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <nav class="navbar navbar-expand-md navbar-light bg-light fixed-top">
+        <a class="navbar-brand" href="#">Navbar</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+            <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+            <li class="nav-item active">
+                <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Link</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+            </li>
+            </ul>
+            <form class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2" type="search" placeholder="Search">
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+            </form>
+        </div>
+        </nav>
+    </header>
+
+    <main class="bg-light" role="main">
+        <div class="container marketing">
+            <!-- 文章特色图像 -->
+            <div class="jumbotron p-4 p-md-5 text-white rounded bg-dark shadow p-3 mb-5 bg-white rounded wow animate__fadeIn" style="background:url(images/79784339_p0.png);">
+                <div class="col-md-6 px-0">
+                    <h1 class="display-4 font-italic">Title of a longer featured blog post</h1>
+                    <p class="lead my-3">Multiple lines of text that form the lede, informing new readers quickly and efficiently about what’s most interesting in this post’s contents.</p>
+                    <p class="lead mb-0"><a href="#" class="text-white font-weight-bold">Continue reading...</a></p>
+                </div>
+            </div>
+            
+
+            <!-- 文章内容 -->
+            <div class="shadow-sm p-3 mb-5 bg-white rounded wow animate__fadeIn">
+                <p class="text-justify">
+                    placeholder text to demonstrate justified text alignment. Will you do the same for me? It's time to face the music I'm no longer your muse. Heard it's beautiful, be the judge and my girls gonna take a vote. I can feel a phoenix inside of me. Heaven is jealous of our love, angels are crying from up above. Yeah, you take me to utopia.
+                </p>
+            </div>
+            
+            <!-- 评论列表 -->
+            <div class="shadow-sm p-3 mb-5 bg-white rounded wow animate__fadeIn" style="margin: 50px 0;">
+
+                <div class="media">
+                    <img src="..." class="mr-3" alt="...">
+                    <div class="media-body">
+                      <h5 class="mt-0">Media heading</h5>
+                      <p>Standing on the frontline when the bombs start to fall. Heaven is jealous of our love, angels are crying from up above. Can't replace you with a million rings. Boy, when you're with me I'll give you a taste. There’s no going back. Before you met me I was alright but things were kinda heavy. Heavy is the head that wears the crown.</p>
+                  
+                        <button href="#" type="button" class="btn btn-sm btn-link" data-toggle="modal" data-target="#exampleModal">回复</button>
+                        
+
+                      <div class="media mt-3">
+                        <a class="mr-3" href="#">
+                          <img src="..." alt="...">
+                        </a>
+                        <div class="media-body">
+                          <h5 class="mt-0">Media heading</h5>
+                          <p>Greetings loved ones let's take a journey. Yes, we make angels cry, raining down on earth from up above. Give you something good to celebrate. I used to bite my tongue and hold my breath. I'm ma get your heart racing in my skin-tight jeans. As I march alone to a different beat. Summer after high school when we first met. You're so hypnotizing, could you be the devil? Could you be an angel? It's time to bring out the big balloons. Thought that I was the exception. Bikinis, zucchinis, Martinis, no weenies.</p>
+
+                          <button href="#" type="button" class="btn btn-sm btn-link" data-toggle="modal" data-target="#exampleModal">回复</button>
+
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+            </div>
+
+            <!-- Modal -->
+            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">评论回复</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                    </div>
+                    <div class="modal-body">
+
+                        <div class="col-md-12 order-md-1">
+                            
+                            <form class="needs-validation" novalidate="">
+
+
+                                <div class="form-group mb-3">
+                                    <label for="exampleFormControlTextarea1">填写回复内容</label>
+                                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                                </div>
+                            
+                                <div class="row mb-3">
+                                    <div class="col-md-6 mb-3">
+                                    <label for="firstName">用户名<a class="text-danger ml-1">*</a></label>
+                                    <input type="text" class="form-control" id="firstName" placeholder="" value="" required="">
+                                    <div class="invalid-feedback">
+                                        Valid first name is required.
+                                    </div>
+                                    </div>
+                                    <div class="col-md-6 mb-3">
+                                    <label for="lastName">电子邮件<a class="text-danger ml-1">*</a></label>
+                                    <input type="text" class="form-control" id="lastName" placeholder="" value="" required="">
+                                    <div class="invalid-feedback">
+                                        Valid last name is required.
+                                    </div>
+                                    </div>
+                                </div>
+
+                                <div class="alert alert-danger" role="alert">
+                                    请输入用户名和电子邮件！
+                                    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                      </button>
+                                </div>
+                                <div class="alert alert-success" role="alert">
+                                    发表评论成功，请等待审核！
+                                    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                      </button>
+                                </div>
+                            
+                    
+                            </form>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">取消</button>
+                    <button type="button" class="btn btn-primary">发送</button>
+                    </div>
+                </div>
+                </div>
+            </div>
+
+
+            <!-- 文章评论表 -->
+            <div class="col-md-12 order-md-1 wow animate__fadeIn">
+                <!-- <h4 class="mb-3">发表评论</h4> -->
+                <form class="needs-validation" novalidate="">
+
+
+                    <div class="form-group mb-3">
+                        <label for="exampleFormControlTextarea1">评论</label>
+                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                    </div>
+                
+                    <div class="row mb-3">
+                        <div class="col-md-6 mb-3">
+                        <label for="firstName">用户名<a class="text-danger ml-1">*</a></label>
+                        <input type="text" class="form-control is-valid" id="firstName" placeholder="" value="" required="">
+                        <div class="invalid-feedback">
+                            <!-- Valid first name is required. -->
+                            请输入用户名！
+                        </div>
+                        </div>
+                        <div class="col-md-6 mb-3">
+                        <label for="lastName">电子邮件<a class="text-danger ml-1">*</a></label>
+                        <input type="text" class="form-control is-invalid" id="lastName" placeholder="" value="" required="">
+                        <div class="invalid-feedback">
+                            <!-- Valid last name is required. -->
+                            电子邮件错误！
+                        </div>
+                        </div>
+                    </div>
+
+                    <div class="alert alert-danger" role="alert">
+                        请输入用户名和电子邮件！
+                        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                          </button>
+                    </div>
+                    <div class="alert alert-success" role="alert">
+                        发表评论成功，请等待审核！
+                        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                          </button>
+                    </div>
+                  
+          
+                  
+                    <button type="submit" class="btn btn-outline-primary btn-lg">发表评论</button>
+                </form>
+              </div>
+
+
+        </div>
+    
+        
+    </main>
+
+
+    <footer class="text-muted" style="margin: 50px 0;">
+        <div class="container">
+          <p class="float-right">
+            <a class="backtop" href="#">Back to top</a>
+          </p>
+          <p>Album example is © Bootstrap, but please download and customize it for yourself!</p>
+          <p>New to Bootstrap? <a href="/">Visit the homepage</a> or read our <a href="/docs/getting-started/introduction/">getting started guide</a>.</p>
+        </div>
+      </footer>
+
+      <script>
+        wow = new WOW(
+            {
+                boxClass: 'wow',      // 默认属性名
+                animateClass: ' animate__animated ', // 默认触发的动画类(包含在animate css中)
+                offset: 0,          // 为所有添加wow的元素设置 data-wow-delay属性 的默认值
+                mobile: true,       // 是否在移动设备中开启动画
+                live: true        // 持续监测页面中是否插入新的wow元素
+            }
+        );
+        wow.init();
+
+        // 缓慢回到顶部
+        $('.backtop').click(function () {
+            $('html,body').animate({ scrollTop: 0 }, 500);
+        });
+    </script>
+</body>
+</html>
